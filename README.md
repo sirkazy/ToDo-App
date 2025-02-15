@@ -133,6 +133,6 @@ Distributed under the MIT License. See the [LICENSE](LICENSE) file for more info
 
 ## Contact
 
-Your Name - [oladokuntioluwanimi.com](mailto:oladokuntioluwanimi.com)  
+Your Name - [oladokuntioluwanimi@gmail.com](mailto:oladokuntioluwanimi@gmail.com)  
 Project Link: [https://github.com/sirkazy/ToDo-App](https://github.com/sirkazy/ToDo-App)
 Netlify Project Link - [https://kazy-todo-task.netlify.app](https://kazy-todo-task.netlify.app)
