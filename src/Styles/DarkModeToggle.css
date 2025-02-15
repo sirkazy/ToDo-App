@@ -1,0 +1,103 @@
+.darklight-icon{
+  display: none;
+}
+
+.dark-mode-toggle .darklight-text {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background: #ddd;
+    border: 1px solid #af7eeb;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .darkmode .task_detail p{
+    color: white
+  } 
+  .dark-mode .dark-mode-toggle .darklight-text{
+    background: #444;
+    color: white;
+  }
+  
+  .dark-mode-toggle .darklight-text:focus{
+    border-color: #af7eeb;
+    box-shadow: 0 0 10px #af7eeb;
+  }
+
+  @media(max-width: 1280px){
+    .dark-mode-toggle{
+      width: 200px;
+    }
+
+    .darklight-icon{
+      display: none;
+    }
+  }
+  @media (max-width: 950px) {
+    .dark-mode-toggle{
+      width: 150px;
+      font-size: 15px;
+    }
+    .darklight-icon{
+      display: none;
+    }
+  }
+  
+  
+  @media(max-width: 650px){
+    .dark-mode-toggle{
+      width: 120px;
+      font-size: 12px;
+    }
+
+    .dark-mode-toggle .darklight-text{
+      font-size: 12px;
+    }
+
+    .darklight-icon{
+      display: none;
+    }
+  }
+  
+  @media(max-width: 450px){
+    .dark-mode-toggle{
+      width: 110px;
+    }
+    .dark-mode-toggle .darklight-text{
+      font-size: 10px;
+    }
+    .darklight-icon{
+      display: none;
+    }
+  }  
+  
+  @media(max-width: 300px){
+    .dark-mode-toggle{
+      width: 80px;
+      font-size: 8px;
+    }
+    .darklight-text{
+      display: none;
+    }
+    .darklight-icon{
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 15px;
+      background: #ddd;
+      border: 1px solid #af7eeb;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+    }
+  } 
