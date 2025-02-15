@@ -42,7 +42,7 @@ A simple and robust Todo application built with React that allows you to manage 
    ```
 4. **Start the Development Server**
    ```bash
-   npm start
+   npm run dev
    ```
    The app will run on [http://localhost:5173](http://localhost:5173).
 
