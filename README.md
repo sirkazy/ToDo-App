@@ -44,7 +44,7 @@ A simple and robust Todo application built with React that allows you to manage 
    ```bash
    npm start
    ```
-   The app will run on [http://localhost:3000](http://localhost:5173).
+   The app will run on [http://localhost:5173](http://localhost:5173).
 
 ## Usage
 
