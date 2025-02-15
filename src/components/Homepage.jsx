@@ -24,6 +24,10 @@ const Homepage = ({ tasks, setTasks }) => {
     );
   };
 
+  const capitalizeFirstLetter = (text) => {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  };
+
   const filteredTasks = tasks.filter((task) =>
     (filter === "all" ? true : filter === "complete" ? task.status === "complete" : task.status !== "complete") &&
     (task.title.toLowerCase().includes(searchTerm.toLowerCase()) || task.status.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -68,11 +72,21 @@ const Homepage = ({ tasks, setTasks }) => {
               <Link to={`/task/${task.id}`}>
               <li key={task.id} className="task_item">
                 <div className="task_link">
-                  <div className="task_buttons" onClick={() => handleToggle(task.id)}>
-                    <input type="radio" checked={task.status === "complete"} readOnly className="input" />
-                  </div>
+                <div className="task_buttons">
+                <input 
+                  type="radio" 
+                  checked={task.status === "complete"} 
+                  readOnly 
+                  className="input" 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleToggle(task.id);
+                  }} 
+                />
+              </div>
+
                   
-                    <h3 className="task_title">{task.title}</h3>
+                  <h3 className="task_title">{capitalizeFirstLetter(task.title)}</h3>
                   <p className="task_status"><strong></strong> {task.status}</p>
                   <p className="task_userid"><strong></strong> {task.userId}</p>
                   
@@ -99,4 +113,4 @@ const Homepage = ({ tasks, setTasks }) => {
   );
 };
 
-export default Homepage;
+export default Homepage;  

@@ -10,4 +10,4 @@ const DarkModeToggle = ({ darkMode, setDarkMode }) => {
   );
 };
 
-export default DarkModeToggle;
+export default DarkModeToggle;  

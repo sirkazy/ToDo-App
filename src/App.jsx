@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
@@ -29,7 +28,7 @@ const App = () => {
           const response = await fetch("https://jsonplaceholder.typicode.com/todos");
           if (!response.ok) throw new Error("Failed to fetch tasks");
           const data = await response.json();
-          const formattedTasks = data.slice(0, 20).map((task) => ({
+          const formattedTasks = data.slice(0, 30).map((task) => ({
             ...task,
             status: task.completed ? "complete" : "incomplete", // Map completed to status
           }));

@@ -18,4 +18,4 @@ const AddTaskDialog = ({ setTasks, onClose }) => {
   );
 };
 
-export default AddTaskDialog;
+export default AddTaskDialog;                                                                                                                    
