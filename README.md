@@ -26,15 +26,11 @@ A simple and robust Todo application built with React that allows you to manage 
 - **External API Integration**
   - Fetches an initial list of tasks from [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos).
 
-## Demo
-
-_Add a screenshot or GIF of your app here if available._
-
 ## Installation
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/react-todo-app.git
+   git clone https://github.com/sirkazy/ToDo-App
    ```
 2. **Navigate into the Project Directory**
    ```bash
@@ -48,7 +44,7 @@ _Add a screenshot or GIF of your app here if available._
    ```bash
    npm start
    ```
-   The app will run on [http://localhost:3000](http://localhost:3000).
+   The app will run on [http://localhost:3000](http://localhost:5173).
 
 ## Usage
 
